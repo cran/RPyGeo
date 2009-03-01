@@ -10,8 +10,8 @@
 \tabular{ll}{
 Package: \tab RPyGeo\cr
 Type: \tab Package\cr
-Version: \tab 0.9-0\cr
-Date: \tab 2007-09-18\cr
+Version: \tab 0.9-1\cr
+Date: \tab 2009-03-01\cr
 License: \tab GPL\cr
 }
 The function \code{rpygeo.geoprocessor} is the core function of this package.
@@ -32,7 +32,6 @@ releases.
 \examples{
 \dontrun{rpygeo.geoprocessor("Slope_sa('dem','slope')",
   "Aspect_sa('dem','aspect')", 
-  "Hillshade_sa('dem','hshd')")}
-  
-\dontrun{rpygeo.Slope.sa("dem","slope")}
+  "Hillshade_sa('dem','hshd')")
+rpygeo.Slope.sa("dem","slope")}
 }

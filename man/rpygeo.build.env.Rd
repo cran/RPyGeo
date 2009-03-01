@@ -8,7 +8,7 @@ rpygeo.build.env(modules = "arcgisscripting",
     init = "gp = arcgisscripting.create()", 
     workspace = NULL, cellsize = NULL, extent = NULL, 
     mask = NULL, overwriteoutput = 0, extensions = NULL, 
-    python.path = "C:\\software\\Python24", 
+    python.path = "C:\\\\software\\\\Python24", 
     python.command = "python.exe")
 rpygeo.env
 }
