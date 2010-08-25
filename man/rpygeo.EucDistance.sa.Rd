@@ -32,8 +32,8 @@ rpygeo.Delete.management(in.data, data.type = NULL, ...)
       Shapefiles must include the extension \code{".shp"}.}
   \item{env}{A list defining an RPyGeo working environment as built
       by \code{rpygeo.build.env}.}
-  \item{maxdist, cellsize, out.direction.raster,}{  }
-  \item{azimuth, altitude, model.shadows, z.factor,}{  }
+  \item{maxdist, cellsize, out.direction.raster}{ see ArcGIS online help  }
+  \item{azimuth, altitude, model.shadows, z.factor}{ see ArcGIS online help }
   \item{unit, data.type}{Arguments to be passed to the Python
        geoprocessing function. See ArcGIS help files for information
        on the usage of scripting commands and their arguments.}
