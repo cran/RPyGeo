@@ -10,7 +10,7 @@ the ArcGIS Hydrology toolset of the Spatial Analyst extension.}
 rpygeo.FlowAccumulation.sa(in.flow.direction.raster,
     out.accumulation.raster, in.weight.raster = NULL,
     data.type = c("FLOAT","INTEGER"), ...)
-rpygeo.FlowDirection.sa = function(in.surface.raster,
+rpygeo.FlowDirection.sa(in.surface.raster,
     out.flow.direction.raster, force.flow = c("NORMAL","FORCE"),
     out.drop.raster = NULL, ...)
 rpygeo.FlowLength.sa(in.flow.direction.raster,
@@ -30,6 +30,7 @@ rpygeo.Sink.sa(in.flow.direction.raster, out.raster, ...)
        to the Python geoprocessing tool. See ArcGIS help files 
        (link below) for information on the usage of scripting 
        commands and their arguments.}
+  \item{force.flow}{see ArcGIS help}
   \item{\dots}{Additional arguments to be passed to
         \code{\link{rpygeo.geoprocessor}}.}
 }

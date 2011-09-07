@@ -10,8 +10,8 @@
 \tabular{ll}{
 Package: \tab RPyGeo\cr
 Type: \tab Package\cr
-Version: \tab 0.9-2\cr
-Date: \tab 2010-08-25\cr
+Version: \tab 0.9-3\cr
+Date: \tab 2011-09-07\cr
 License: \tab GPL\cr
 }
 The function \code{rpygeo.geoprocessor} is the core function of this package.

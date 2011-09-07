@@ -1,3 +1,6 @@
+# 2011-09-07
+# - rpygeo.build.env and rpygeo.geoprocessor
+#   snapraster now supported
 # 2008-08-15
 # - rpygeo.geoprocessor
 #   - Now using os.chdir to set OS working directory in
@@ -41,6 +44,7 @@ rpygeo.build.env = function(
     cellsize = NULL,
     extent = NULL,
     mask = NULL,
+    snapraster = NULL,
     overwriteoutput = 0,
     extensions = NULL,
     python.path = "C:\\software\\Python24",
@@ -53,6 +57,7 @@ rpygeo.build.env = function(
         cellsize = cellsize,
         extent = rpygeo.extent.to.character(extent),
         mask = mask,
+        snapraster = snapraster,
         overwriteoutput = overwriteoutput,
         extensions = extensions,
         python.path = python.path,
@@ -221,6 +226,8 @@ rpygeo.geoprocessor = function(
         expr = paste( expr, "gp.Extent = ", convert(env$extent), "\n", sep="" )
     if (!is.null(env$mask))
         expr = paste( expr, "gp.Mask = ", convert(env$mask), "\n", sep="" )
+    if (!is.null(env$snapraster))
+        expr = paste( expr, "gp.snapRaster = ", convert(env$snapraster), "\n", sep="" )
     if (!is.null(env$overwriteoutput))
         expr = paste( expr, "gp.Overwriteoutput = ", convert(env$overwriteoutput), "\n", sep="" )
     if (!is.null(extensions))

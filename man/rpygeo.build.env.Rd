@@ -7,7 +7,8 @@
 rpygeo.build.env(modules = "arcgisscripting", 
     init = "gp = arcgisscripting.create()", 
     workspace = NULL, cellsize = NULL, extent = NULL, 
-    mask = NULL, overwriteoutput = 0, extensions = NULL, 
+    mask = NULL, snapraster = NULL,
+    overwriteoutput = 0, extensions = NULL, 
     python.path = "C:\\\\software\\\\Python24", 
     python.command = "python.exe")
 rpygeo.env
@@ -21,8 +22,8 @@ rpygeo.env
       in which to perform the geoprocessing.}
   \item{cellsize}{Default cellsize (default: maximum(?) of 
       inputs - see ArcGIS documentation).}
-  \item{extent, mask}{Datasets or character strings defining the
-      analysis extent and mask - see ArcGIS documentation.}
+  \item{extent, mask, snapraster}{Optional datasets or character strings defining the
+      analysis extent and mask and what to snap to - see ArcGIS documentation.}
   \item{overwriteoutput}{Overwrite existing ArcGIS datasets (\code{=1})
       or not (\code{=0} - default)?}
   \item{extensions}{Names of extensions to be used in geoprocessing;
