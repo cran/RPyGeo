@@ -1,0 +1,18 @@
+RPyGeo 1.0.0
+--------------------------------------------------------------------------------
+
+General:
+
+ * The R-ArcMap interface was completely rewritten, and is now based on the **reticulate** package. The reticulate package accesses the arcpy Python side-package and provides all arcpy functions and classes in the R session.
+
+New features:
+
+ * `rpygeo_load()` - Load the output of arcpy functions into the R session
+ * `rpygeo_save()` - Save temporary files to the workspace
+ * `rpygeo_search()` - Searches for arcpy functions
+ * `rpygeo_help()` - View arcpy help files in RStudio viewer panel or browser
+ * Map algebra operators
+ * File geodatabase support
+ * Code compilation in RStudio
+ * Forward arcpy function output with the `%>%` operator
+
